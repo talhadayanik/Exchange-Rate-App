@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtInfo"
+        android:layout_width="370dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/roboto_slab"
+        android:text="Veriler Türkiye Cumhuriyeti Merkez Bankası'ndan aşağıdaki tarihte alınmıştır."
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/roboto_slab"
+        android:text="TextView"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtInfo" />
+
+    <Button
+        android:id="@+id/btnCurrency"
+        android:layout_width="265dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="70dp"
+        android:drawableEnd="@drawable/_931160_down_direction_download_pointer_arrow_icon"
+        android:fontFamily="@font/roboto_slab"
+        android:text="Döviz Kuru Seçin"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:backgroundTint="@android:color/transparent"
+        app:cornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDate"
+        app:rippleColor="#33AAAAAA"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp" />
+
+    <TextView
+        android:id="@+id/txtUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/roboto_slab"
+        android:text="Döviz Seçilmedi"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnCurrency"
+        app:layout_constraintStart_toStartOf="@+id/btnCurrency"
+        app:layout_constraintTop_toBottomOf="@+id/btnCurrency" />
+
+    <TextView
+        android:id="@+id/txtDovizAlis"
+        android:layout_width="130dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="120dp"
+        android:fontFamily="@font/roboto_slab"
+        android:text="Döviz Alış"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCurrency" />
+
+    <TextView
+        android:id="@+id/txtDovizAlisValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto_slab"
+        android:text="0"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtDovizAlis"
+        app:layout_constraintStart_toStartOf="@+id/txtDovizAlis"
+        app:layout_constraintTop_toBottomOf="@+id/txtDovizAlis" />
+
+    <TextView
+        android:id="@+id/txtDovizSatis"
+        android:layout_width="130dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="50dp"
+        android:fontFamily="@font/roboto_slab"
+        android:text="Döviz Satış"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCurrency" />
+
+    <TextView
+        android:id="@+id/txtDovizSatisValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto_slab"
+        android:text="0"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtDovizSatis"
+        app:layout_constraintStart_toStartOf="@+id/txtDovizSatis"
+        app:layout_constraintTop_toBottomOf="@+id/txtDovizSatis" />
+
+    <TextView
+        android:id="@+id/txtEfektifAlis"
+        android:layout_width="130dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="120dp"
+        android:fontFamily="@font/roboto_slab"
+        android:text="Efektif Alış"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtDovizAlis"
+        app:layout_constraintStart_toStartOf="@+id/txtDovizAlis"
+        app:layout_constraintTop_toBottomOf="@+id/txtDovizAlis" />
+
+    <TextView
+        android:id="@+id/txtEfektifAlisValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto_slab"
+        android:text="0"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtEfektifAlis"
+        app:layout_constraintStart_toStartOf="@+id/txtEfektifAlis"
+        app:layout_constraintTop_toBottomOf="@+id/txtEfektifAlis" />
+
+    <TextView
+        android:id="@+id/txtEfektifSatis"
+        android:layout_width="130dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="120dp"
+        android:fontFamily="@font/roboto_slab"
+        android:text="Efektif Satış"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtDovizSatis"
+        app:layout_constraintStart_toStartOf="@+id/txtDovizSatis"
+        app:layout_constraintTop_toBottomOf="@+id/txtDovizSatis" />
+
+    <TextView
+        android:id="@+id/txtEfektifSatisValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto_slab"
+        android:text="0"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtEfektifSatis"
+        app:layout_constraintStart_toStartOf="@+id/txtEfektifSatis"
+        app:layout_constraintTop_toBottomOf="@+id/txtEfektifSatis" />
+</androidx.constraintlayout.widget.ConstraintLayout>
